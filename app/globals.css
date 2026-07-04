@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.container{
+    max-width: 1200px;
+}
+.bg-bg{
+    background-color: #580000;
+}
+.text-color{
+    color: #580000;
+}
+@font-face {
+  font-family: "HFMassisShantNUnicode";
+  src: url("/font/HFMassisShantNUnicode.ttf");
+}
+.FontMassis{
+  font-family: "HFMassisShantNUnicode";
+}
+.borderR{
+  border-radius: 10px;
+}
