@@ -3,8 +3,10 @@ import { priceList, works } from "@/const/const";
 import Image from "next/image";
 import Link from "next/link";
 import { use, useState } from "react";
+import { Contact } from "./Contact";
 
 export function Home() {
+  const [openModal, setOpenModal] = useState(false);
   const [filter, setFilter] = useState("Բոլորը");
   const filteredWorks = filter === "Բոլորը" ? works : works.filter((work) => work.name === filter);
   const filters = ["Բոլորը", "Հարսանեկան", "Ծննդյան", "Կնունքի ", "Բանակի", "Նշանադրության"];
@@ -75,12 +77,12 @@ export function Home() {
                   >
                     Տեսնել
                   </Link>
-                  <Link 
-                    href={e.link}
+                  <button
+                    onClick={() => setOpenModal(true)}
                     className="borderR bg-bg text-white  px-3 py-2 w-max"
                   >
                     Պատվիրել
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -111,6 +113,9 @@ export function Home() {
             </div>
           ))}
         </div>
+
+
+        {openModal && <Contact setOpenModal={setOpenModal} />}
       </div>
     </main>
   );

@@ -6,10 +6,24 @@ import {Footer} from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
-  title: "Lilit Bareghamyan",
-  description: "Front-end developer",
+  title: "Site Up",
+  description: "Թավային հրավիրատոմսեր",
+  openGraph: {
+    title: "Site Up",
+    description: "Թավային հրավիրատոմսեր",
+    url: "https://siteup-tawny.vercel.app/",
+    siteName: "siteup.am",
+    images: [
+      {
+        url: "/img1.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

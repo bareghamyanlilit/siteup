@@ -2,28 +2,41 @@
 
 import { useState } from "react";
 
-export function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+export function Contact({setOpenModal}: {setOpenModal: (open: boolean) => void}) {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    invitationCode: "",
+    message: "",
+  });
+
   const [status, setStatus] = useState("");
 
   const [errors, setErrors] = useState({
     name: false,
-    email: false,
-    message: false,
+    phone: false,
+    invitationCode: false,
   });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: false });
+
+    if (e.target.name in errors) {
+      setErrors({
+        ...errors,
+        [e.target.name]: false,
+      });
+    }
   };
 
   const validate = () => {
     const newErrors = {
       name: form.name.trim() === "",
-      email: !/\S+@\S+\.\S+/.test(form.email),
-      message: form.message.trim() === "",
+      phone: form.phone.trim() === "",
+      invitationCode: form.invitationCode.trim() === "",
     };
 
     setErrors(newErrors);
@@ -35,29 +48,37 @@ export function Contact() {
 
     if (!validate()) return;
 
-    setStatus("Sending...");
+    setStatus("Ուղարկվում է...");
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(form),
       });
 
       if (res.ok) {
-        setStatus("✅ Message sent successfully");
-        setForm({ name: "", email: "", message: "" });
+        setStatus("✅ Պատվերը հաջողությամբ ուղարկվեց");
+        setForm({
+          name: "",
+          phone: "",
+          email: "",
+          invitationCode: "",
+          message: "",
+        });
       } else {
-        setStatus("❌ An error occurred, please try again");
+        setStatus("❌ Սխալ տեղի ունեցավ");
       }
-    } catch (err) {
-      console.error(err);
-      setStatus("❌ Server connection problem");
+    } catch (error) {
+      console.error(error);
+      setStatus("❌ Սերվերի հետ կապ հաստատել չհաջողվեց");
     }
   };
 
   const inputClasses = (error: boolean, value: string) =>
-    `p-4 text-lg  rounded-md md:rounded-xl outline-none transition border
+    `p-2 text-lg rounded-md md:rounded-xl outline-none transition border
     ${
       error
         ? "border-red-600 focus:border-red-600 focus:ring-2 focus:ring-red-300"
@@ -67,81 +88,76 @@ export function Contact() {
     }`;
 
   return (
-    <div className="min-h-screen flex items-center justify-center md:px-6 py-24">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full max-w-6xl">
-        <div className="text-white flex flex-col gap-5 md:gap-10 px-6 md:px-0">
-          <h1 className="text-4xl text-center md:text-6xl font-semibold tracking-tight">
-            Պատվիրել <span className="text-red-950"></span>
+    <div className="min-h-screen  w-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-6 py-24">
+      <div className="w-full max-w-3xl">
+        <div className=" relative bg-white md:rounded-2xl px-5 py-6 md:px-10 md:py-12 shadow-2xl border border-gray-200">
+        <p className="absolute top-4 right-4 cursor-pointer text-3xl" onClick={() => setOpenModal(false)}>X</p>
+          <h1 className="text-2xl md:text-5xl font-semibold text-center mt-5 mb-10">
+            Պատվիրել հրավիրատոմս
           </h1>
-          <Label
-            name="Էլ․ հասցե"
-            href="mailto:baregamyanlilit36@gmail.com"
-            text="baregamyanlilit36@gmail.com"
-          />
-          <Label name="Հեռախոսահամար" href="tel:+37477760204" text="077-76-02-04" />
-        </div>
 
-        <div className="bg-white  w-full md:w-auto md:rounded-2xl px-5 py-6 md:px-10 md:py-12 shadow-2xl border border-gray-200">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <input
               type="text"
               name="name"
-              placeholder="Ձեր անունը"
+              placeholder="Անուն Ազգանուն *"
               value={form.name}
               onChange={handleChange}
               className={inputClasses(errors.name, form.name)}
             />
 
             <input
+              type="tel"
+              name="phone"
+              placeholder="Հեռախոսահամար *"
+              value={form.phone}
+              onChange={handleChange}
+              className={inputClasses(errors.phone, form.phone)}
+            />
+
+            <input
               type="email"
               name="email"
-              placeholder="Ձեր էլ հասցեն"
+              placeholder="Էլ․ հասցե"
               value={form.email}
               onChange={handleChange}
-              className={inputClasses(errors.email, form.email)}
+              className={inputClasses(false, form.email)}
+            />
+
+            <input
+              type="text"
+              name="invitationCode"
+              placeholder="Հրավիրատոմսի կոդ *"
+              value={form.invitationCode}
+              onChange={handleChange}
+              className={inputClasses(
+                errors.invitationCode,
+                form.invitationCode
+              )}
             />
 
             <textarea
               name="message"
-              rows={6}
-              placeholder="Հաղորդագրություն (Հեռախոսահամարը ցանկալի է)"
+              rows={2}
+              placeholder="Մեկնաբանություն"
               value={form.message}
               onChange={handleChange}
-              className={inputClasses(errors.message, form.message)}
+              className=" p-2 text-lg rounded-md md:rounded-xl outline-none transition border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 resize-none"
             />
 
-            <button className="cursor-pointer bg-red-950 text-white py-4 rounded-xl text-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all">
-              Ուղարկել 
+            <button
+              type="submit"
+              className="cursor-pointer bg-red-950 text-white py-2 rounded-md md:rounded-xl text-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all"
+            >
+              Պատվիրել
             </button>
           </form>
 
           {status && (
-            <p className="text-center mt-4 text-black text-lg">{status}</p>
+            <p className="text-center mt-6 text-black text-lg">{status}</p>
           )}
         </div>
       </div>
-    </div>
-  );
-}
-
-function Label({
-  name,
-  href,
-  text,
-}: {
-  name: string;
-  href: string;
-  text: string;
-}) {
-  return (
-    <div className="backdrop-blur-xl bg-white/5 p-3 md:p-6 rounded-md md:rounded-2xl shadow-xl ">
-      <p className="text-gray-200 text-lg">{name}</p>
-      <a
-        href={href}
-        className="text-base md:text-2xl font-medium hover:text-red-950 transition"
-      >
-        {text}
-      </a>
     </div>
   );
 }
