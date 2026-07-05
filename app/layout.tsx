@@ -33,8 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#ffffff] text-color mx-auto max-w-md ">
         <Header/>
-        {children}
         <Analytics/>
+        {children}
         <Footer/>
       </body>
     </html>
