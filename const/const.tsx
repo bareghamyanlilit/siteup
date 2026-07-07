@@ -35,7 +35,8 @@ export const works = [
     src: "/works/L006.png",
     code:"L006",
     price:"6000",
-    discount:"4500"
+    discount:"4500",
+    rsvp:false
   },
   {
     name: "Հարսանեկան",
@@ -43,7 +44,8 @@ export const works = [
     src: "/works/L016.png",
     code:"L016",
     price:"13 000",
-    discount:"11 500"
+    discount:"11 500",
+    rsvp:true
   },
   {
     name: "Հարսանեկան",
@@ -51,23 +53,8 @@ export const works = [
     src: "/works/L012.png",
     code:"L012",
     price:"10 000",
-    discount:"8500"
-  },
-  {
-    name: "Մկրտության",
-    link: "https://l401.vercel.app/",
-    src: "/works/L401.png",
-    code:"L401",
-    price:"8 000",
-    discount:"7000"
-  },
-  {
-    name: "Բանակի",
-    link: "https://l301.vercel.app/",
-    src: "/works/L301.png",
-    code:"L301",
-    price:"7 000",
-    discount:"6000"
+    discount:"8500",
+    rsvp:false
   },
   {
     name: "Հարսանեկան",
@@ -75,87 +62,16 @@ export const works = [
     src: "/works/L003.png",
     code:"L003",
     price:"7000",
+    rsvp:false
   },
   {
     name: "Հարսանեկան",
     link: "https://l014.vercel.app/",
     src: "/works/L014.png",
     code:"L014",
-    price:"17 000",
-    discount:"15 500"
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://betrothal-invitation-envelope-1.vercel.app/",
-    src: "/works/L002.png",
-    code:"L002",
-    price:"7500",
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://site-up-l010.vercel.app/",
-    src: "/works/L010.png",
-    code:"L010",
-    price:"8000",
-  },
-  {
-    name: "Նշանադրության",
-    link: "https://betrothal-invitation-1.vercel.app/",
-    src: "/works/L004.png",
-    code:"L004",
-    price:"6000",
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://xxx-sage-two.vercel.app/",
-    src: "/works/L013.png",
-    code:"L013",
-    price:"9000",
-    discount:"7000"
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://l005.vercel.app/",
-    src: "/works/L005.png",
-    code:"L005",
-    price:"14 000",
-    discount:"12 000"
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://l015-beige.vercel.app/",
-    src: "/works/L015.png",
-    code:"L015",
-    price:"11 000",
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://wedding-invitation-3.vercel.app/",
-    src: "/works/L001.png",
-    code:"L001",
-    price:"7500",
-  },
-  {
-    name: "Ծննդյան",
-    link: "https://l102.vercel.app/",
-    src: "/works/L102.png",
-    code:"L102",
-    price:"7 000",
-    discount:"5500"
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://l007.vercel.app/",
-    src: "/works/L007.png",
-    code:"L007",
-    price:"12 000",
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://site-up-all-in-one-3.vercel.app/",
-    src: "/works/L009.png",
-    code:"L009",
-    price:"15 500",
+    price:"16 000",
+    discount:"14 500",
+    rsvp:true
   },
   {
     name: "Հարսանեկան",
@@ -163,7 +79,109 @@ export const works = [
     src: "/works/L011.png",
     code:"L011",
     price:"11 000",
-    discount:"8500"
+    discount:"8500",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://betrothal-invitation-envelope-1.vercel.app/",
+    src: "/works/L002.png",
+    code:"L002",
+    price:"7500",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://site-up-l010.vercel.app/",
+    src: "/works/L010.png",
+    code:"L010",
+    price:"8000",
+    rsvp:false
+  },
+  {
+    name: "Նշանադրության",
+    link: "https://betrothal-invitation-1.vercel.app/",
+    src: "/works/L004.png",
+    code:"L004",
+    price:"6000",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://xxx-sage-two.vercel.app/",
+    src: "/works/L013.png",
+    code:"L013",
+    price:"9000",
+    discount:"7000",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l005.vercel.app/",
+    src: "/works/L005.png",
+    code:"L005",
+    price:"12 000",
+    discount:"11 000",
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l015-beige.vercel.app/",
+    src: "/works/L015.png",
+    code:"L015",
+    price:"11 000",
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://wedding-invitation-3.vercel.app/",
+    src: "/works/L001.png",
+    code:"L001",
+    price:"7500",
+    rsvp:false
+  },
+  {
+    name: "Ծննդյան",
+    link: "https://l102.vercel.app/",
+    src: "/works/L102.png",
+    code:"L102",
+    price:"7 000",
+    discount:"5500",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l007.vercel.app/",
+    src: "/works/L007.png",
+    code:"L007",
+    price:"11 000",
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://site-up-all-in-one-3.vercel.app/",
+    src: "/works/L009.png",
+    code:"L009",
+    price:"12 500",
+    rsvp:true
+  },
+  {
+    name: "Մկրտության",
+    link: "https://l401.vercel.app/",
+    src: "/works/L401.png",
+    code:"L401",
+    price:"8 000",
+    discount:"7000",
+    rsvp:false
+  },
+  {
+    name: "Բանակի",
+    link: "https://l301.vercel.app/",
+    src: "/works/L301.png",
+    code:"L301",
+    price:"7 000",
+    discount:"6000",
+    rsvp:false
   },
 ];
 export const filters = ["Բոլորը", "Հարսանեկան", "Ծննդյան", "Կնունքի ", "Բանակի", "Նշանադրության" ];

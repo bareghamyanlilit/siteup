@@ -103,7 +103,7 @@ export function Home() {
           {filteredWorks.map((e) => (
             <div
               key={e.code}
-              className=" borderR h-85 border border-[#580000]"
+              className=" borderR h-90 border border-[#580000]"
             >
               <Image
                 className="rounded-t-[10px] object-cover w-full h-50 "
@@ -112,11 +112,12 @@ export function Home() {
                 height={500}
                 alt={e.name}
               />
-              <div className="text-sm w-full px-2 py-2 flex h-35 flex-col  justify-between">
+              <div className="text-sm w-full px-2 py-2 flex h-40 flex-col  justify-between">
 
                 <h2 className=" text-base text-center  ">
                   {e.name}
                 </h2>
+                <p> {e.rsvp ? "Գրանցման համակարգով" : ""}</p>
                 <h2 className="text-center ">
                   Կոդ: {e.code}
                 </h2>
