@@ -7,10 +7,10 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Site Up",
-  description: "Թավային հրավիրատոմսեր",
+  description: "Թվային հրավիրատոմսեր",
   openGraph: {
     title: "Site Up",
-    description: "Թավային հրավիրատոմսեր",
+    description: "Թվային հրավիրատոմսեր",
     url: "https://siteup-am.vercel.app",
     siteName: "siteup.am",
     images: [
