@@ -31,6 +31,14 @@ export const socials = [
 export const works = [
   {
     name: "Հարսանեկան",
+    link: "https://wedding-invitation-2-smoky.vercel.app/",
+    src: "/works/L006.png",
+    code:"L006",
+    price:"6000",
+    discount:"4500"
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l016.vercel.app/",
     src: "/works/L016.png",
     code:"L016",
@@ -39,18 +47,34 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
-    link: "https://l015-beige.vercel.app/",
-    src: "/works/L015.png",
-    code:"L015",
-    price:"11 000",
+    link: "https://site-up-l012.vercel.app/",
+    src: "/works/L012.png",
+    code:"L012",
+    price:"10 000",
+    discount:"8500"
+  },
+  {
+    name: "Մկրտության",
+    link: "https://l401.vercel.app/",
+    src: "/works/L401.png",
+    code:"L401",
+    price:"8 000",
+    discount:"7000"
+  },
+  {
+    name: "Բանակի",
+    link: "https://l301.vercel.app/",
+    src: "/works/L301.png",
+    code:"L301",
+    price:"7 000",
+    discount:"6000"
   },
   {
     name: "Հարսանեկան",
-    link: "https://wedding-invitation-2-smoky.vercel.app/",
-    src: "/works/L006.png",
-    code:"L006",
-    price:"6000",
-    discount:"4500"
+    link: "https://wedding-invitation-4.vercel.app/",
+    src: "/works/L003.png",
+    code:"L003",
+    price:"7000",
   },
   {
     name: "Հարսանեկան",
@@ -69,32 +93,17 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
-    link: "https://wedding-invitation-4.vercel.app/",
-    src: "/works/L003.png",
-    code:"L003",
-    price:"7000",
-  },
-  {
-    name: "Հարսանեկան",
     link: "https://site-up-l010.vercel.app/",
     src: "/works/L010.png",
     code:"L010",
-    price:"8500",
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://site-up-l012.vercel.app/",
-    src: "/works/L012.png",
-    code:"L012",
-    price:"13 000",
-    discount:"9500"
+    price:"8000",
   },
   {
     name: "Նշանադրության",
     link: "https://betrothal-invitation-1.vercel.app/",
     src: "/works/L004.png",
     code:"L004",
-    price:"600",
+    price:"6000",
   },
   {
     name: "Հարսանեկան",
@@ -109,8 +118,15 @@ export const works = [
     link: "https://l005.vercel.app/",
     src: "/works/L005.png",
     code:"L005",
-    price:"16 000",
-    discount:"14 000"
+    price:"14 000",
+    discount:"12 000"
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l015-beige.vercel.app/",
+    src: "/works/L015.png",
+    code:"L015",
+    price:"11 000",
   },
   {
     name: "Հարսանեկան",
@@ -118,6 +134,14 @@ export const works = [
     src: "/works/L001.png",
     code:"L001",
     price:"7500",
+  },
+  {
+    name: "Ծննդյան",
+    link: "https://l102.vercel.app/",
+    src: "/works/L102.png",
+    code:"L102",
+    price:"7 000",
+    discount:"5500"
   },
   {
     name: "Հարսանեկան",
@@ -131,7 +155,7 @@ export const works = [
     link: "https://site-up-all-in-one-3.vercel.app/",
     src: "/works/L009.png",
     code:"L009",
-    price:"16 500",
+    price:"15 500",
   },
   {
     name: "Հարսանեկան",

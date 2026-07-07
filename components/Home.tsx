@@ -8,8 +8,47 @@ import { Contact } from "./Contact";
 export function Home() {
   const [openModal, setOpenModal] = useState(false);
   const [filter, setFilter] = useState("Բոլորը");
-  const filteredWorks = filter === "Բոլորը" ? works : works.filter((work) => work.name === filter);
-  const filters = ["Բոլորը", "Հարսանեկան", "Ծննդյան", "Կնունքի ", "Բանակի", "Նշանադրության"];
+  const [sort, setSort] = useState("default");
+  const [priceRange, setPriceRange] = useState("all");
+
+  const filteredWorks = works
+    .filter((work) => {
+      const categoryMatch =
+        filter === "Բոլորը" || work.name === filter;
+
+      const price = Number(
+        (work.discount || work.price)
+          .replace(/[^\d]/g, "")
+      );
+
+      let rangeMatch = true;
+
+      if (priceRange === "0-9000") {
+        rangeMatch = price <= 9000;
+      } else if (priceRange === "9000-13000") {
+        rangeMatch = price > 9000 && price <= 13000;
+      } else if (priceRange === "13000+") {
+        rangeMatch = price > 13000;
+      }
+
+      return categoryMatch && rangeMatch;
+    })
+    .sort((a, b) => {
+      const priceA = Number(
+        (a.discount || a.price).replace(/[^\d]/g, "")
+      );
+
+      const priceB = Number(
+        (b.discount || b.price).replace(/[^\d]/g, "")
+      );
+
+      if (sort === "cheap") return priceA - priceB;
+      if (sort === "expensive") return priceB - priceA;
+
+      return 0;
+    });
+  const filters = ["Բոլորը", "Հարսանեկան", "Ծննդյան", "Մկրտության", "Բանակի", "Նշանադրության"];
+
   return (
     <main className="FontMassis  bg-cover text-center relative bg-center w-full overflow-hidden ">
       <div className="min-h-[90vh] bg-bg relative">
@@ -35,6 +74,29 @@ export function Home() {
               {e}
             </button>
           ))}
+        </div>
+        <div className="w-full px-2 flex justify-between">
+
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
+            className="border border-[#580000] px-3 py-2 borderR"
+          >
+            <option value="default">Դասավորում</option>
+            <option value="cheap">Էժանից → Թանկ</option>
+            <option value="expensive">Թանկից → Էժան</option>
+          </select>
+
+          <select
+            value={priceRange}
+            onChange={(e) => setPriceRange(e.target.value)}
+            className="border border-[#580000] px-3 py-2 borderR"
+          >
+            <option value="all">Բոլոր գները</option>
+            <option value="0-9000">Մինչև 9,000 ֏</option>
+            <option value="9000-13000">9,000 ֏ - 13,000 ֏</option>
+            <option value="13000+">13,000 ֏ +</option>
+          </select>
         </div>
 
         <div className="container m-auto grid grid-cols-2 gap-4 px-2">
