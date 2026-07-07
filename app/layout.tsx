@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Site Up",
     description: "Թավային հրավիրատոմսեր",
-    url: "https://siteup-tawny.vercel.app/",
+    url: "https://siteup-am.vercel.app",
     siteName: "siteup.am",
     images: [
       {
