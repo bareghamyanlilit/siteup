@@ -31,6 +31,15 @@ export const socials = [
 export const works = [
   {
     name: "Հարսանեկան",
+    link: "https://l017.vercel.app",
+    src: "/works/L017.png",
+    code:"L017",
+    price:"14 500",
+    discount:"12 500",
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://wedding-invitation-2-smoky.vercel.app/",
     src: "/works/L006.png",
     code:"L006",
