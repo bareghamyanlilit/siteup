@@ -40,15 +40,6 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
-    link: "https://wedding-invitation-2-smoky.vercel.app/",
-    src: "/works/L006.png",
-    code:"L006",
-    price:"6000",
-    discount:"4500",
-    rsvp:false
-  },
-  {
-    name: "Հարսանեկան",
     link: "https://l016.vercel.app/",
     src: "/works/L016.png",
     code:"L016",
@@ -147,6 +138,15 @@ export const works = [
     src: "/works/L001.png",
     code:"L001",
     price:"7500",
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://wedding-invitation-2-smoky.vercel.app/",
+    src: "/works/L006.png",
+    code:"L006",
+    price:"6000",
+    discount:"4500",
     rsvp:false
   },
   {
