@@ -135,6 +135,15 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
+    link: "https://xxx-sage-two.vercel.app/",
+    src: "/works/L013.png",
+    code:"L020",
+    price:"13500",
+    discount:"11500",
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l005.vercel.app/",
     src: "/works/L005.png",
     code:"L005",
