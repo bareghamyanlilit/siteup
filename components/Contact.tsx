@@ -43,7 +43,7 @@ export function Contact({setOpenModal}: {setOpenModal: (open: boolean) => void})
     return !Object.values(newErrors).includes(true);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!validate()) return;
@@ -51,13 +51,14 @@ export function Contact({setOpenModal}: {setOpenModal: (open: boolean) => void})
     setStatus("Ուղարկվում է...");
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+      const res = await fetch("/api/rsvp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({form}),
+  });
+
 
       if (res.ok) {
         setStatus("✅ Պատվերը հաջողությամբ ուղարկվեց");
