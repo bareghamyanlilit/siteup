@@ -2,19 +2,50 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { form } = await req.json();
+    const { form, code } = await req.json();
 
     const text = `
-📩 Նոր պատվեր
+      📩 Նոր պատվեր
 
-👤 Անուն: ${form.name}
-📞 Հեռախոս: ${form.phone}
-📧 Email: ${form.email || "-"}
-🎫 Կոդ: ${form.invitationCode}
+      🎫 Հրավիրատոմսի կոդ: ${code}
+      👤 Անուն: ${form.name}
+      📞 Հեռախոս: ${form.phone}
+      📧 Email: ${form.email || "-"}
 
-💬 Մեկնաբանություն:
-${form.message || "-"}
-`;
+      💬 Մեկնաբանություն:
+      ${form.message || "-"}
+
+      ━━━━━━━━━━━━━━
+      💍 ՀՐԱՎԵՐԻ ՏՎՅԱԼՆԵՐ
+      ━━━━━━━━━━━━━━
+
+      👩‍❤️‍👨 Անուններ: ${form.names || "-"}
+      📅 Առիթի օրը: ${form.day || "-"}
+
+      🏠 Փեսայի տուն
+      ⏰ Ժամ: ${form.time1 || "-"}
+      📍 Հասցե: ${form.addres1 || "-"}
+
+      🏠 Հարսի տուն
+      ⏰ Ժամ: ${form.time2 || "-"}
+      📍 Հասցե: ${form.addres2 || "-"}
+
+      ⛪ Եկեղեցի
+      ⏰ Ժամ: ${form.time3 || "-"}
+      📍 Հասցե: ${form.addres3 || "-"}
+
+      🍽 Ռեստորան
+      ⏰ Ժամ: ${form.time4 || "-"}
+      📍 Հասցե: ${form.addres4 || "-"}
+
+      🎵 Երգ: ${form.music || "-"}
+
+      Կազմը։
+            ${form.data},
+
+
+      Գինը։ ${form.price}
+      `;
 
     const response = await fetch(
       `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,

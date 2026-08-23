@@ -10,6 +10,7 @@ export function Home() {
   const [filter, setFilter] = useState("Բոլորը");
   const [sort, setSort] = useState("default");
   const [priceRange, setPriceRange] = useState("all");
+  const [item, setItem] = useState<any>("");
 
   const filteredWorks = works
     .filter((work) => {
@@ -141,7 +142,10 @@ export function Home() {
                     Տեսնել
                   </Link>
                   <button
-                    onClick={() => setOpenModal(true)}
+                    onClick={() => {
+                      setOpenModal(true)
+                    setItem(e)}
+                    }
                     className="borderR bg-bg text-white  px-3 py-2 w-max"
                   >
                     Պատվիրել
@@ -178,7 +182,7 @@ export function Home() {
         </div>
 
 
-        {openModal && <Contact setOpenModal={setOpenModal} />}
+        {openModal && <Contact setOpenModal={setOpenModal} item={item}/>}
       </div>
     </main>
   );

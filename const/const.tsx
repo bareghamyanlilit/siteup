@@ -31,11 +31,21 @@ export const socials = [
 export const works = [
   {
     name: "Հարսանեկան",
-    link: "https://l018.vercel.app",
-    src: "/works/L018.png",
-    code:"L018",
-    price:"11 500",
-    discount:"10 500",
+    link: "https://l022.vercel.app",
+    src: "/works/L022.png",
+    code:"L022",
+    price:"17500",
+    discount:"17500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":true,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":true,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:true
   },
   {
@@ -43,8 +53,17 @@ export const works = [
     link: "https://l019.vercel.app",
     src: "/works/L019.png",
     code:"L019",
-    price:"7 500",
-    discount:"6 500",
+    price:"6500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -52,17 +71,90 @@ export const works = [
     link: "https://l017.vercel.app",
     src: "/works/L017.png",
     code:"L017",
-    price:"14 500",
-    discount:"12 500",
+    price:"13000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l015-beige.vercel.app/",
+    src: "/works/L015.png",
+    code:"L015",
+    price:"12000",
+    imgcount:2,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l018.vercel.app",
+    src: "/works/L018.png",
+    code:"L018",
+    price:"11500",
+    discount:"10500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l021.vercel.app",
+    src: "/works/L021.png",
+    code:"L021",
+    price:"7500",
+    imgcount:2,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:false
   },
   {
     name: "Հարսանեկան",
     link: "https://l016.vercel.app/",
     src: "/works/L016.png",
     code:"L016",
-    price:"13 000",
-    discount:"11 500",
+    price:"13000",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:true
   },
   {
@@ -70,8 +162,17 @@ export const works = [
     link: "https://site-up-l012.vercel.app/",
     src: "/works/L012.png",
     code:"L012",
-    price:"10 000",
-    discount:"8500",
+    price:"9500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -80,6 +181,16 @@ export const works = [
     src: "/works/L003.png",
     code:"L003",
     price:"7000",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -87,8 +198,17 @@ export const works = [
     link: "https://l014.vercel.app/",
     src: "/works/L014.png",
     code:"L014",
-    price:"16 000",
-    discount:"14 500",
+    price:"16000",
+    imgcount:7,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":true,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:true
   },
   {
@@ -96,16 +216,17 @@ export const works = [
     link: "https://l011.vercel.app/",
     src: "/works/L011.png",
     code:"L011",
-    price:"11 000",
-    discount:"8500",
-    rsvp:false
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://betrothal-invitation-envelope-1.vercel.app/",
-    src: "/works/L002.png",
-    code:"L002",
-    price:"7500",
+    price:"9000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:false
   },
   {
@@ -114,6 +235,16 @@ export const works = [
     src: "/works/L010.png",
     code:"L010",
     price:"8000",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:false
   },
   {
@@ -122,6 +253,16 @@ export const works = [
     src: "/works/L004.png",
     code:"L004",
     price:"6000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -129,8 +270,17 @@ export const works = [
     link: "https://l013.vercel.app/",
     src: "/works/L013.png",
     code:"L013",
-    price:"9000",
-    discount:"7000",
+    price:"7000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -139,7 +289,16 @@ export const works = [
     src: "/works/L013.png",
     code:"L020",
     price:"13500",
-    discount:"11500",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:true
   },
   {
@@ -147,16 +306,17 @@ export const works = [
     link: "https://l005.vercel.app/",
     src: "/works/L005.png",
     code:"L005",
-    price:"12 000",
-    discount:"11 000",
-    rsvp:true
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://l015-beige.vercel.app/",
-    src: "/works/L015.png",
-    code:"L015",
-    price:"11 000",
+    price:"12000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:true
   },
   {
@@ -165,6 +325,16 @@ export const works = [
     src: "/works/L001.png",
     code:"L001",
     price:"7500",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -172,8 +342,17 @@ export const works = [
     link: "https://wedding-invitation-2-smoky.vercel.app/",
     src: "/works/L006.png",
     code:"L006",
-    price:"6000",
-    discount:"4500",
+    price:"5000",
+    imgcount:1,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -181,8 +360,17 @@ export const works = [
     link: "https://l102.vercel.app/",
     src: "/works/L102.png",
     code:"L102",
-    price:"7 000",
-    discount:"5500",
+    price:"5000",
+    imgcount:0,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -190,7 +378,17 @@ export const works = [
     link: "https://l007.vercel.app/",
     src: "/works/L007.png",
     code:"L007",
-    price:"11 000",
+    price:"11000",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:true
   },
   {
@@ -198,7 +396,17 @@ export const works = [
     link: "https://site-up-all-in-one-3.vercel.app/",
     src: "/works/L009.png",
     code:"L009",
-    price:"12 500",
+    price:"13500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
+    },
     rsvp:true
   },
   {
@@ -206,8 +414,17 @@ export const works = [
     link: "https://l401.vercel.app/",
     src: "/works/L401.png",
     code:"L401",
-    price:"8 000",
-    discount:"7000",
+    price:"7500",
+    imgcount:2,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
   {
@@ -215,8 +432,17 @@ export const works = [
     link: "https://l301.vercel.app/",
     src: "/works/L301.png",
     code:"L301",
-    price:"7 000",
-    discount:"6000",
+    price:"6000",
+    imgcount:1,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
     rsvp:false
   },
 ];
