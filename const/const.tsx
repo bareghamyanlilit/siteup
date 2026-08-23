@@ -35,7 +35,6 @@ export const works = [
     src: "/works/L022.png",
     code:"L022",
     price:"17500",
-    discount:"17500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,

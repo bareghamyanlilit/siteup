@@ -17,7 +17,7 @@ export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) 
   const gner = [3000, 4000, 1000, 2000, 1000, 1000, 1500]
   const [newObj, setNewObj] = useState(item.data)
   const [data, setData] = useState(newObj);
-  let [price, setPrice] = useState(+item.discount)
+  let [price, setPrice] = useState(+item.price)
 
   const hashvark = () => {
     console.log("newObj", newObj);
@@ -95,7 +95,6 @@ export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) 
   const [errors, setErrors] = useState<any>({
     name: false,
     phone: false,
-    invitationCode: false,
   });
 
   const handleChange = (
