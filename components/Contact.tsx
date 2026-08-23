@@ -115,7 +115,6 @@ export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) 
     const newErrors = {
       name: form.name.trim() === "",
       phone: form.phone.trim() === "",
-      invitationCode: form.invitationCode.trim() === "",
     };
 
     setErrors(newErrors);
