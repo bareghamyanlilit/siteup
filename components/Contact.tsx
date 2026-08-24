@@ -49,7 +49,15 @@ export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) 
   useEffect(() => {
     hashvark()
   }, [data])
-
+  useEffect(() => {
+    setForm((prev: any) => ({
+      ...prev,
+      data: Object.entries(data)
+        .map(([key, value]) => `${value ? "✅" : "❌"} ${key}`)
+        .join("\n"),
+      price,
+    }));
+  }, [data, price]);
   const fields = [
     ["name", "Անուն Ազգանուն *"],
     ["phone", "Հեռախոսահամար *"],
@@ -122,7 +130,9 @@ export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) 
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-let code=item.code
+    let code = item.code
+    console.log(code);
+
     if (!validate()) return;
 
     setStatus("Ուղարկվում է...");
@@ -133,7 +143,7 @@ let code=item.code
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ form },code),
+        body: JSON.stringify({ form, code }),
       });
 
 
