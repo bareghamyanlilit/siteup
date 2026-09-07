@@ -51,7 +51,7 @@ export const works = [
     name: "Հարսանեկան",
     link: "https://l025.vercel.app",
     src: "/works/L025.png",
-    code:"L022",
+    code:"L025",
     price:"15500",
     imgcount:3,
     data:{
@@ -62,6 +62,24 @@ export const works = [
       "Նամակի հատված":true,
       "Կալենդար հատված":true,
       "Աստվածաշնչյան հատված":false
+    },
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l026.vercel.app",
+    src: "/works/L026.png",
+    code:"L026",
+    price:"15500",
+    imgcount:4,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":false,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":true
     },
     rsvp:true
   },
