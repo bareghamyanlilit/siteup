@@ -31,28 +31,10 @@ export const socials = [
 export const works = [
   {
     name: "Հարսանեկան",
-    link: "https://l022.vercel.app",
-    src: "/works/L022.png",
-    code:"L022",
-    price:"17500",
-    imgcount:3,
-    data:{
-      "Հյուրերի գրանցման համակարգ" :true,
-      "Թարգմանություն":true,
-      "Դրես Կոդ":true,
-      "Գալերյա հատված":true,
-      "Նամակի հատված":true,
-      "Կալենդար հատված":false,
-      "Աստվածաշնչյան հատված":false
-    },
-    rsvp:true
-  },
-  {
-    name: "Հարսանեկան",
     link: "https://l019.vercel.app",
     src: "/works/L019.png",
     code:"L019",
-    price:"6500",
+    price:"7500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -67,10 +49,46 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
+    link: "https://l025.vercel.app",
+    src: "/works/L025.png",
+    code:"L022",
+    price:"15500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l022.vercel.app",
+    src: "/works/L022.png",
+    code:"L022",
+    price:"19500",
+    imgcount:3,
+    data:{
+      "Հյուրերի գրանցման համակարգ" :true,
+      "Թարգմանություն":true,
+      "Դրես Կոդ":true,
+      "Գալերյա հատված":true,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:true
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l017.vercel.app",
     src: "/works/L017.png",
     code:"L017",
-    price:"13000",
+    price:"14500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -88,7 +106,7 @@ export const works = [
     link: "https://l015-beige.vercel.app/",
     src: "/works/L015.png",
     code:"L015",
-    price:"12000",
+    price:"13500",
     imgcount:2,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -106,8 +124,7 @@ export const works = [
     link: "https://l018.vercel.app",
     src: "/works/L018.png",
     code:"L018",
-    price:"11500",
-    discount:"10500",
+    price:"12500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -125,7 +142,7 @@ export const works = [
     link: "https://l021.vercel.app",
     src: "/works/L021.png",
     code:"L021",
-    price:"7500",
+    price:"8500",
     imgcount:2,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -143,7 +160,7 @@ export const works = [
     link: "https://l016.vercel.app/",
     src: "/works/L016.png",
     code:"L016",
-    price:"13000",
+    price:"14500",
     imgcount:4,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -179,7 +196,7 @@ export const works = [
     link: "https://wedding-invitation-4.vercel.app/",
     src: "/works/L003.png",
     code:"L003",
-    price:"7000",
+    price:"8000",
     imgcount:4,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -197,7 +214,7 @@ export const works = [
     link: "https://l014.vercel.app/",
     src: "/works/L014.png",
     code:"L014",
-    price:"16000",
+    price:"17500",
     imgcount:7,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -215,7 +232,7 @@ export const works = [
     link: "https://l011.vercel.app/",
     src: "/works/L011.png",
     code:"L011",
-    price:"9000",
+    price:"9500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -233,7 +250,7 @@ export const works = [
     link: "https://site-up-l010.vercel.app/",
     src: "/works/L010.png",
     code:"L010",
-    price:"8000",
+    price:"9500",
     imgcount:4,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -251,7 +268,7 @@ export const works = [
     link: "https://betrothal-invitation-1.vercel.app/",
     src: "/works/L004.png",
     code:"L004",
-    price:"6000",
+    price:"7500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -269,7 +286,7 @@ export const works = [
     link: "https://l013.vercel.app/",
     src: "/works/L013.png",
     code:"L013",
-    price:"7000",
+    price:"8500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -305,7 +322,7 @@ export const works = [
     link: "https://l005.vercel.app/",
     src: "/works/L005.png",
     code:"L005",
-    price:"12000",
+    price:"14500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -341,7 +358,7 @@ export const works = [
     link: "https://wedding-invitation-2-smoky.vercel.app/",
     src: "/works/L006.png",
     code:"L006",
-    price:"5000",
+    price:"6000",
     imgcount:1,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -377,7 +394,7 @@ export const works = [
     link: "https://l007.vercel.app/",
     src: "/works/L007.png",
     code:"L007",
-    price:"11000",
+    price:"12500",
     imgcount:3,
     data:{
       "Հյուրերի գրանցման համակարգ" :true,
@@ -395,10 +412,10 @@ export const works = [
     link: "https://site-up-all-in-one-3.vercel.app/",
     src: "/works/L009.png",
     code:"L009",
-    price:"13500",
+    price:"15500",
     imgcount:3,
     data:{
-      "Հյուրերի գրանցման համակարգ" :false,
+      "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
       "Գալերյա հատված":false,
@@ -413,7 +430,7 @@ export const works = [
     link: "https://l401.vercel.app/",
     src: "/works/L401.png",
     code:"L401",
-    price:"7500",
+    price:"8000",
     imgcount:2,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -431,7 +448,7 @@ export const works = [
     link: "https://l301.vercel.app/",
     src: "/works/L301.png",
     code:"L301",
-    price:"6000",
+    price:"7000",
     imgcount:1,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
@@ -449,7 +466,7 @@ export const filters = ["Բոլորը", "Հարսանեկան", "Ծննդյան"
 export const priceList = [
   {
     name: "RSVP համակարգ",
-    price: "3000 դրամ",
+    price: "4000 դրամ",
     src: "/avelacum/rsvp.png",
     desc: "Հրավիրատոմսերի RSVP համակարգը թույլ է տալիս հյուրերին հաստատել իրենց մասնակցությունը միջոցառմանը, ինչը հեշտացնում է կազմակերպիչների համար հյուրերի քանակի վերահսկումը և միջոցառման արդյունավետ պլանավորումը։",
   },
