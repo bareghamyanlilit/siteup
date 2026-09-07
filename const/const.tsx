@@ -67,7 +67,7 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
-    link: "https://l026.vercel.app",
+    link: "https://l026-rosy.vercel.app",
     src: "/works/L026.png",
     code:"L026",
     price:"15500",
