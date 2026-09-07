@@ -18,7 +18,7 @@ export function Home() {
         filter === "Բոլորը" || work.name === filter;
 
       const price = Number(
-        (work.discount || work.price)
+        (work.price)
           .replace(/[^\d]/g, "")
       );
 
@@ -36,11 +36,11 @@ export function Home() {
     })
     .sort((a, b) => {
       const priceA = Number(
-        (a.discount || a.price).replace(/[^\d]/g, "")
+        (a.price).replace(/[^\d]/g, "")
       );
 
       const priceB = Number(
-        (b.discount || b.price).replace(/[^\d]/g, "")
+        (b.price).replace(/[^\d]/g, "")
       );
 
       if (sort === "cheap") return priceA - priceB;
@@ -126,13 +126,8 @@ export function Home() {
 
                   <h2 className="text-center my-2 flex">
                     <p>Գին:</p>
-                    <p className={`${e.discount ? "line-through" : ""}`}>{e.price} </p>
+                    <p>{e.price} </p>
                   </h2>
-                  {e.discount && (
-                    <h2 className="  text-center my-2 ">
-                      {e.discount}
-                    </h2>
-                  )}
                 </div>
                 <div className="w-full flex justify-between ">
                   <Link
