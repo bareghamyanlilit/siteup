@@ -34,7 +34,7 @@ export const works = [
     link: "https://l023.vercel.app/",
     src: "/works/L023.png",
     code:"L023",
-    price:"8500",
+    price:"9500",
     imgcount:2,
     data:{
       "Հյուրերի գրանցման համակարգ" :false,
