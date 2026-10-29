@@ -50,6 +50,25 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
+    link: "https://l019.vercel.app",
+    src: "/works/L019.png",
+    code:"L019",
+    price:"7500",
+    imgcount:3,
+    data:{
+      "Հյուրերի նստեցում" :false,
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":false,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l027.vercel.app",
     src: "/works/L027.png",
     code:"L027",
@@ -127,7 +146,7 @@ export const works = [
   {
     name: "Հարսանեկան",
     link: "https://l024.vercel.app",
-    src: "/works/L022.png",
+    src: "/works/L024.png",
     code:"L024",
     price:"7500",
     imgcount:1,
@@ -161,25 +180,6 @@ export const works = [
       "Աստվածաշնչյան հատված":false
     },
     rsvp:true
-  },
-  {
-    name: "Հարսանեկան",
-    link: "https://l019.vercel.app",
-    src: "/works/L019.png",
-    code:"L019",
-    price:"7500",
-    imgcount:3,
-    data:{
-      "Հյուրերի նստեցում" :false,
-      "Հյուրերի գրանցման համակարգ" :false,
-      "Թարգմանություն":false,
-      "Դրես Կոդ":false,
-      "Գալերյա հատված":false,
-      "Նամակի հատված":true,
-      "Կալենդար հատված":false,
-      "Աստվածաշնչյան հատված":false
-    },
-    rsvp:false
   },
   {
     name: "Հարսանեկան",
