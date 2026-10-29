@@ -31,12 +31,51 @@ export const socials = [
 export const works = [
   {
     name: "Հարսանեկան",
+    link: "https://l028.vercel.app",
+    src: "/works/L028.png",
+    code:"L028",
+    price:"14500",
+    imgcount:3,
+    data:{
+      "Հյուրերի նստեցում" :true,
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
+    link: "https://l027.vercel.app",
+    src: "/works/L027.png",
+    code:"L027",
+    price:"11500",
+    imgcount:2,
+    data:{
+      "Հյուրերի նստեցում" :false,
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l023.vercel.app/",
     src: "/works/L023.png",
     code:"L023",
     price:"9500",
     imgcount:2,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -55,6 +94,7 @@ export const works = [
     price:"15500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
@@ -73,6 +113,7 @@ export const works = [
     price:"15500",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
@@ -85,12 +126,32 @@ export const works = [
   },
   {
     name: "Հարսանեկան",
+    link: "https://l024.vercel.app",
+    src: "/works/L022.png",
+    code:"L024",
+    price:"7500",
+    imgcount:1,
+    data:{
+      "Հյուրերի նստեցում" :false,
+      "Հյուրերի գրանցման համակարգ" :false,
+      "Թարգմանություն":false,
+      "Դրես Կոդ":false,
+      "Գալերյա հատված":false,
+      "Նամակի հատված":true,
+      "Կալենդար հատված":true,
+      "Աստվածաշնչյան հատված":false
+    },
+    rsvp:false
+  },
+  {
+    name: "Հարսանեկան",
     link: "https://l022.vercel.app",
     src: "/works/L022.png",
     code:"L022",
     price:"19500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":true,
       "Դրես Կոդ":true,
@@ -109,6 +170,7 @@ export const works = [
     price:"7500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -127,6 +189,7 @@ export const works = [
     price:"14500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -145,6 +208,7 @@ export const works = [
     price:"13500",
     imgcount:2,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -163,6 +227,7 @@ export const works = [
     price:"12500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -181,6 +246,7 @@ export const works = [
     price:"8500",
     imgcount:2,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -199,6 +265,7 @@ export const works = [
     price:"14500",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -217,6 +284,7 @@ export const works = [
     price:"9500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -235,6 +303,7 @@ export const works = [
     price:"8000",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -253,6 +322,7 @@ export const works = [
     price:"17500",
     imgcount:7,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
@@ -271,6 +341,7 @@ export const works = [
     price:"9500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -289,6 +360,7 @@ export const works = [
     price:"9500",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
@@ -307,6 +379,7 @@ export const works = [
     price:"7500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -325,6 +398,7 @@ export const works = [
     price:"8500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -343,6 +417,7 @@ export const works = [
     price:"13500",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -361,6 +436,7 @@ export const works = [
     price:"14500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -379,6 +455,7 @@ export const works = [
     price:"7500",
     imgcount:4,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -397,6 +474,7 @@ export const works = [
     price:"6000",
     imgcount:1,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -415,6 +493,7 @@ export const works = [
     price:"5000",
     imgcount:0,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -433,6 +512,7 @@ export const works = [
     price:"12500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -451,6 +531,7 @@ export const works = [
     price:"15500",
     imgcount:3,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :true,
       "Թարգմանություն":false,
       "Դրես Կոդ":true,
@@ -469,6 +550,7 @@ export const works = [
     price:"8000",
     imgcount:2,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -487,6 +569,7 @@ export const works = [
     price:"7000",
     imgcount:1,
     data:{
+      "Հյուրերի նստեցում" :false,
       "Հյուրերի գրանցման համակարգ" :false,
       "Թարգմանություն":false,
       "Դրես Կոդ":false,
@@ -514,7 +597,7 @@ export const priceList = [
   },
   {
     name: "Նամակի հատված",
-    price: "1000 դրամ",
+    price: "1500 դրամ",
     src: "/avelacum/envelope.png",
     desc: "Նամակի հատվածի շնորհիվ երգը միանում է առանց կոճակի ,նամակի բացվելու ժամանակ ,իսկ առանց նամակի տարբերակներում երգը միանում է կոճակի շնորհիվ",
   },
@@ -525,6 +608,12 @@ export const priceList = [
     desc: "Dress Code-ը թույլ է տալիս հյուրերին տեղեկանալ միջոցառման հագուստի պահանջներին, ապահովելով, որ նրանք հագնվեն համապատասխան և ներդաշնակ միջոցառման թեմայի հետ։",
   },
   {
+    name: "Հյուրերի նստեցում",
+    price: "5000 դրամ",
+    src: "/avelacum/tables2.png",
+    desc: "Հյուրը մոտքագրում է իր անուն ազգանունը և տեսնում իր տեղը սրահում",
+  },
+  {
     name: "Սեղանների ցանկ",
     price: "1նկարը - 1000 դրամ",
     src: "/avelacum/tables.png",
@@ -532,7 +621,7 @@ export const priceList = [
   },
   {
     name: "Նկարներ",
-    price: "2000 դրամ",
+    price: "3000 դրամ",
     src: "/avelacum/mas2.png",
     desc: "Նկարների հատված ",
   },
@@ -549,7 +638,7 @@ export const priceList = [
   },
   {
     name: "Երաժշտություն",
-    price: "Անվճար",
+    price: "500",
     desc: "Երաժշտությունը ստեղում է հրավիրատոմսի համար հնչող երաժշտական ֆոն, որը կարող է ներառել ձեր նախընտրած երգերը կամ երաժշտական թեմաները",
   },
 ];

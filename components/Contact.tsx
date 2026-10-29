@@ -6,15 +6,16 @@ import { Footer } from "./Footer";
 export function Contact({ setOpenModal, item }: { setOpenModal: (open: boolean) => void, item: any }) {
 
   const all = {
+    "Հյուրերի նստեցում": 5000,
     "Հյուրերի գրանցման համակարգ": 4000,
     "Թարգմանություն": 4000,
     "Դրես Կոդ": 1500,
-    "Գալերյա հատված": 2000,
-    "Նամակի հատված": 1000,
+    "Գալերյա հատված": 3000,
+    "Նամակի հատված": 1500,
     "Կալենդար հատված": 1000,
     "Աստվածաշնչյան հատված": 1500
   }
-  const gner = [4000, 4000, 1500, 2000, 1000, 1000, 1500]
+  const gner = [5000,4000, 4000, 1500, 3000, 1500, 1000, 1500]
   const [newObj, setNewObj] = useState(item.data)
   const [data, setData] = useState(newObj);
   let [price, setPrice] = useState(+item.price)

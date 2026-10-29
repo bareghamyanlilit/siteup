@@ -109,8 +109,8 @@ export function Home() {
               <Image
                 className="rounded-t-[10px] object-cover w-full h-50 "
                 src={e.src}
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 alt={e.name}
               />
               <div className="text-sm w-full px-2 py-2 flex h-40 flex-col  justify-between">
